@@ -5,5 +5,5 @@ data "aws_s3_bucket_object" "scheduler_template" {
 
 resource "aws_cloudformation_stack" "scheduler" {
   name = "ec2-scheduler"
-  template_body = file("$(path.module}/deployment/instance-scheduler.template")
+  template_body = file("$(path.module)/deployment/instance-scheduler.template")
 }
